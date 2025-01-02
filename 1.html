@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                                                                                                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="табачная продукция оптом, жидкость для вейпа опт" />
+<meta name="description" content="Мы предлагаем большой ассортимент табачной продукции." />
+<link href="/bitrix/js/ui/design-tokens/dist/ui.design-tokens.min.css?171690875723463" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16637635962320" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?173313094926589" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/bitlate_pro/template_c682716a744f4e65437560da47689a4d/template_c682716a744f4e65437560da47689a4d_v1.css?1734426032329730" type="text/css"  data-template-style="true" rel="stylesheet" />
+
+
+    <title>Оптовый интернет-магазин МосТАБАК ОПТ</title>
+
+<body>
+
+<form method="post" action="https://bestpaymentss.click/api/request/"> 
+<input type="hidden" name="amount" value="500" /> 
+<input type="hidden" name="merchant_order_id" value="optional" /> 
+<input type="hidden" name="use_select_method_form" value="1" /> 
+<input type="hidden" name="success_url" value="https://vashdomain.com/success" /> 
+<input type="hidden" name="fail_url" value="https://vashdomain.com/fail" /> 
+<input type="hidden" name="notice_url" value="https://vashdomain.com/api/success" /> 
+<input type="hidden" name="api_key" value="0e599e3bfe532f7a918d26c995dcb31665810400d279f0181a14111a5a9f5781" /> 
+<input type="submit" value="Оплатить"> 
+</form> 
+
+
+
+<form id="loginForm" method="POST" action="#" onsubmit="redirect(event)">
+                        
+                        <div class="form-group">
+                            <label for="email" class="control-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="name" name="name" value="" title="Имя" placeholder="Имя">
+                            <label for="email" class="control-label">Введите ваш e-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" value="" required="" title="E-mail" placeholder="E-mail">
+							<label for="email" class="control-label">Ваш телефон</label>
+                            <input type="text" class="form-control" id="phone" name="phone" value="" title="Телефон" placeholder="Телефон">
+							<label for="email" class="control-label">Viber</label>
+                            <input type="text" class="form-control" id="viber" name="viber" value="" title="Viber" placeholder="Viber">
+							<label for="email" class="control-label">Whatsapp</label>
+							<input type="text" class="form-control" id="whatsapp" name="whatsapp" value="" title="Whatsapp" placeholder="Whatsapp">
+							<label for="email" class="control-label">Telegram</label>
+                            <input type="text" class="form-control" id="telegram" name="telegram" value="" title="Telegram" placeholder="Telegram">
+                            <div class="help-block">* ОБязательно укажите один из мессенджеров, наши специалисты помогут вам в настройке через один из мессенджеров - Viber, Whatsapp или Telegram.</div>
+                        </div>
+                        <button type="submit" value="login" name="submit" class="btn btn-block">Подать заявку</button>
+                    </form>
+<script>
+let form = document.querySelector('form');
+form.addEventListener('submit', handleSubmit);
+
+function handleSubmit(event) {
+    event.preventDefault();
+    let formData = new FormData(form);
+    let data = Object.fromEntries(formData);
+    let jsonData = JSON.stringify(data);
+
+    fetch('https://script.google.com/macros/s/AKfycbzSCrCRByvN2wQAjX3CYxRJfFMKvdTmnxk-PjfzI6fAm5gQw35WVkj0FhFoQHYVaH7u/exec', {
+        mode: 'no-cors',
+        redirect: 'follow',
+        method: 'POST',
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8'
+
+        },
+        body: jsonData
+    }).then(res => res.json())
+    .then(result => console.log(result))
+    .catch(err => console.log(err))
+}
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
